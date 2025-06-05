@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Lista de Tarefas</h1>
+    <!--LISTA DE TAREFAS DIVIDIDAS EM 3 TURNOS, MANHA, TARDE E NOITE-->
+    <!--AS TAREFAS DEVEM SER ADICIONADAS DINAMICAMENTE
+    E MARCADAS COMO FEITAS QUANDO CLICADAS-->
+    <div class="principal">
+        <div class="manha">
+            <h2 class="manha">Manhã</h2>
+            <section class="campos">
+                <input type="text" id="tarefaManha" placeholder="Digite uma tarefa" class="tarefaAddManha">
+            </section>
+            <button id="adicionarManha" onclick="adicionarTarefaManha()" type="submit">Adicionar</button>
+            <div class="mensagem"></div>
+            <ul id="listaManha"> <!--MÁXIMO DE 7 TAREFAS-->
+                <!--LISTA DE TAREFAS A SEREM SELECIONADAS-->
+                <p class="tarefaManha"></p>
+            </ul>
+        </div>
+        <div class="tarde">
+            <h2 class="tarde">Tarde</h2>
+            <section class="campos">
+                <input type="text" id="tarefaTarde" placeholder="Digite uma tarefa" class="tarefaAddTarde">
+            </section>
+            <button id="adicionarTarde" onclick="adicionarTarefaTarde()" type="submit">Adicionar</button>
+            <div class="mensagem"></div>
+            <ul id="listaTarde"> <!--MÁXIMO DE 7 TAREFAS-->
+                <!--LISTA DE TAREFAS A SEREM SELECIONADAS-->
+                <p class="tarefaTarde"></p>
+            </ul>
+        </div>
+        <div class="noite">
+            <h2 class="noite">Noite</h2>
+            <section class="campos">
+                <input type="text" id="tarefaNoite" placeholder="Digite uma tarefa" class="tarefaAddNoite">
+            </section>
+            <button id="adicionarNoite" onclick="adicionarTarefaNoite()">Adicionar</button>
+            <div class="mensagem"></div>
+            <ul id="listaNoite"> <!--MÁXIMO DE 7 TAREFAS-->
+                <!--LISTA DE TAREFAS A SEREM SELECIONADAS-->
+                <p class="tarefaNoite"></p>
+            </ul>
+        </div>
+        <aside class="botoes">
+            <button class="salvar" onclick="salvar()">Salvar</button>
+            <button class="excluir" style="opacity: 0.6; cursor:not-allowed;" onclick="excluir()">Excluir</button>
+            <!--SÓ DEVE APARECER QUANDO HOUVER TAREFAS-->
+            <button class="limpar" onclick="limpar()">Limpar lista</button>
+        </aside>
+    </div>
+    </div>
+
+    <section class="rodape">
+        <p class="rodape">2025 © João Pedro Viana. Todos os direitos reservados.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
