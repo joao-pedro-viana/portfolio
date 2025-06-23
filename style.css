@@ -173,7 +173,7 @@ position: relative;
   display: flex;
   border: 4.5pt solid var(--primaria);
   border-radius: 10%;
-  background-image: url(https://static-00.iconduck.com/assets.00/hamburger-menu-icon-2048x1536-6qrrvtw1.png);
+  background-image: url('contatos/menu.svg');
   background-size: 100% 100%;
   display: none;
 }
