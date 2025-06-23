@@ -111,7 +111,7 @@ function exibirItens(){
         document.querySelector('.botao-hamburguer').style.backgroundImage = 'url("image/Transparent_X.png")';
     }
     else{
-        document.querySelector('.botao-hamburguer').style.backgroundImage = 'url("https://static-00.iconduck.com/assets.00/hamburger-menu-icon-2048x1536-6qrrvtw1.png")';
+        document.querySelector('.botao-hamburguer').style.backgroundImage = 'url("contatos/menu.svg")';
     }
 }
 
