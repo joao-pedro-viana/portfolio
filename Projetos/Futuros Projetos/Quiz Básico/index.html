@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -26,4 +27,34 @@
         rodape.innerHTML = `${anoAtual}`
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Básico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quiz Básico</h1>
+
+    <h2>Escolha abaixo qual matéria você quer testar:</h2>
+
+    <div>Português</div>
+    <div>Matemática</div>
+
+    <script src="main.js"></script>
+    <footer>
+        <p class="direitos"><div class="ano-atual"></div>© João Pedro Viana. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        const ano = new Date();
+        const anoAtual = ano.getFullYear();
+        const rodape = document.querySelector('.ano-atual')
+
+        rodape.innerHTML = `${anoAtual}`
+    </script>
+</body>
+>>>>>>> b0fe616 (Botão de Acesso nos Projetos)
 </html>

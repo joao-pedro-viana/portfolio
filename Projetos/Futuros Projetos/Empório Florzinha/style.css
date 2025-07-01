@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -347,3 +348,354 @@ div.meios-contato{
     border: 2px solid black;
     color: #000000;
 }
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+div.logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo-azul{
+    width: 10rem;
+    height: 10rem;
+    margin: 0 1rem 0 5rem;
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+
+.menu-principal{
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+    justify-content: center;
+    list-style: none;
+    font-size: 1.22rem;
+    background-color: rgb(135, 207, 255);
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(44, 0, 70);
+    font-weight: 600;
+}
+
+h1.bem-vindo{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+p.apresentacao{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-left: 16rem;
+}
+
+div.produtos-oferecidos{
+    display: grid;
+    grid-template-columns: repeat(3, 35rem);
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto; 
+    background-color: rgb(253, 255, 132);
+    align-content: center;
+    width: 80%;
+    padding: 2rem;
+}
+
+div.tipos-itens{
+    display: grid;
+    grid-template-columns: repeat(3, 35rem);
+    justify-content: center;
+    margin: auto;
+}
+
+div.tipos-prod{
+    display: grid;
+    grid-template-columns: repeat(3, 5rem);
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+div.descricao{
+    background-color: #ffffff;
+    margin-top: 1.1rem;
+    width: 10rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem 0 1rem 1rem;
+    margin-bottom: 0.3rem;
+    margin-right: 1rem;
+}
+
+img.produtos{
+    margin: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: rgb(255, 255, 136);
+    width: 16.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: auto;
+    border: 5pt solid #fffb00;
+    background-image: url(./imagens/red.jpeg);
+}
+
+#p1{
+    background-image: radial-gradient(red, white);
+}
+
+#p2{
+    background-image: radial-gradient(orange, yellow);
+}
+
+#p3{
+    background-image: radial-gradient(yellow, rgb(255, 255, 136));
+}
+
+#p4{
+    background-image: radial-gradient(green, lightgreen);
+}
+
+#p5{
+    background-image: radial-gradient(blue, lightblue);
+}
+
+#p6{
+    background-image: radial-gradient(purple, rgb(51, 0, 85));
+}
+
+#p7{
+    background-image: radial-gradient(rgb(255, 195, 252), rgb(255, 0, 234));
+}
+
+#p8{
+    background-image: radial-gradient(white, rgb(255, 98, 185));
+}
+
+#p9{
+    background-image: radial-gradient(rgb(255, 255, 255), rgb(94, 61, 0));
+}
+
+h2.domingo{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.refeicoes-de-domingo{
+   background-color: #ffa9f8;
+   padding: 2rem;
+   width: 80%;
+   margin: 1rem auto;
+}
+
+.imagens-domingo{
+    display: grid;
+    grid-template-columns: repeat(2, 15rem);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+img.refeicoes{
+    background-color: #ff98d1;
+    width: 15rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    border: 3px solid rgb(255, 0, 140);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.outras-refeicoes{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 1rem;
+    font-weight: 600;
+    width: 60rem;
+    margin: auto;
+}
+
+button.reserva{
+    background-color: #ff8800;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border: 2px solid #000000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+h3.galeria{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    z-index: 1;
+    margin-bottom: 1rem;
+}
+
+div.galeria-fotos{
+    display: grid;
+    grid-template-columns: repeat(3, 15rem);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    z-index: 1;
+}
+
+img.galeria-fotos{
+    width: 15rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3.localizacao{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+iframe{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 20%;
+    margin: auto;
+    display: flex;
+}
+
+.rodape{
+    background-color: rgb(0, 183, 255);
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 30px;
+}
+
+h3.contatos{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+img.nossos-contatos{
+    width: 3.4rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+p.nossos-contatos{
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    background-color: lightblue;
+    width: 7rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+
+input{
+    width: 20rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.botao-form{
+    background-color: #c258ff;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border: 2px solid #000000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+textarea{
+    width: 20rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+div.meios-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.rodape-2{
+    background-color: rgb(255, 255, 255);
+    padding: 0.3rem;
+    margin-top: 1rem;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    border: 2px solid black;
+    color: #000000;
+}
+>>>>>>> b0fe616 (Botão de Acesso nos Projetos)
