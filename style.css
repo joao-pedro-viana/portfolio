@@ -1329,7 +1329,8 @@ p.cabecalho-subtitulo{
    text-align: center;
    border-bottom: 2px solid var(--primaria);
    border-width: 0.35rem;
-}
+   text-shadow: 2px 0 3px var(--primaria)
+} 
 
 .redes-sociais{
    display: flex;
