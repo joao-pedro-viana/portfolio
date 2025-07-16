@@ -1468,15 +1468,13 @@ p.cabecalho-subtitulo{
    background: var(--primaria);
    padding: 1rem 2rem;
    border: none;
-   font-size: 1.5rem;
+   font-size: 1rem;
    border-radius: 4rem;
    cursor: pointer;
    font-weight: bold;
    width: 100%;
    transition: all 0.5s ease;
    border: 1px solid black;
-   -webkit-text-stroke-width: 0.9px;
-   -webkit-text-stroke-color: black;
 }
 
 .acessar-projeto:hover{

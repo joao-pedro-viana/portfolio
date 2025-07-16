@@ -143,8 +143,11 @@ function mudarCor(cor) {
     document.querySelector('.botao-cor').style.boxShadow = `0 0 1rem ${cor}`;
     document.querySelector('.fotoPerfil').style.boxShadow = `0px 0px 3rem ${cor}`;
     document.querySelector('p.cabecalho-subtitulo').style.borderBottom = `4px solid ${cor}`;
-    document.getElementById('acessarProjeto0').style.backgroundColor = cor;
-    document.getElementById('acessarProjeto1').style.backgroundColor = cor;
+
+    const botaoAcessarProjeto = document.querySelectorAll('.acessar-projeto');
+    botaoAcessarProjeto.forEach(botaoAcessar => {
+        botaoAcessar.style.backgroundColor = cor;
+    })
 
     //ALTERA A COR DO BOTÃO HAMBURGUER, NOS CELULARES
     document.querySelector('.botao-hamburguer').style.backgroundColor = cor;
@@ -163,9 +166,13 @@ function mudarCor(cor) {
 
     //ALTERA A COR DO TEXTO DO BOTÃO DE FORMULÁRIO, CASO FIQUE BRANCA OU AMARELA
     const botaoForm = document.getElementById('botao-form');
+    const botaoAcesso = document.querySelectorAll('.acessar-projeto')
 
     if (botaoForm.style.backgroundColor == 'white' || botaoForm.style.backgroundColor == 'yellow' || botaoForm.style.backgroundColor == `rgb(253, 255, 129)`) { //OPÇÕES BRANCO, AMARELO OU AMARELO CLARO
         botaoForm.style.color = 'black';
+        botaoAcesso.forEach(botaoAcessoProjeto => {
+            botaoAcessoProjeto.style.backgroundColor = cor;
+        })
     }
     else {
         botaoForm.style.color = 'white';
