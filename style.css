@@ -1516,6 +1516,14 @@ p.cabecalho-subtitulo{
    grid-template-columns: repeat(4, 25rem);
 }
 
+.em-breve{
+   font-size: 1rem;
+   background-color: var(--primaria);
+   width: 10rem;
+   margin: auto;
+   padding: .5rem;
+}
+
 .contatos{
    padding: 6rem 2rem;
 }
