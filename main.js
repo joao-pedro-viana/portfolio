@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function escolherCores() {
     const paleta = document.querySelector('.paleta-de-cores');
     //ALTERNA A VISIBILIDADE DA PALETA DE CORES
@@ -129,7 +128,7 @@ function mostrarProjetos(){
         botao.innerHTML = 'Ver Menos';
     }
 }
-=======
+
 function escolherCores() {
     const paleta = document.querySelector('.paleta-de-cores');
     //ALTERNA A VISIBILIDADE DA PALETA DE CORES
@@ -270,4 +269,3 @@ function mostrarProjetos(){
         botao.innerHTML = 'Ver Menos';
     }
 }
->>>>>>> b0fe616 (Botão de Acesso nos Projetos)
