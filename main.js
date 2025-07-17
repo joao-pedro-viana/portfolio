@@ -4,7 +4,7 @@ function escolherCores() {
     paleta.style.display = (paleta.style.display == 'none') || paleta.style.display == '' ? 'block' : 'none';
 }
 
-function mudarCor(cor) {
+function mudarCor(cor) { 
     //ALTERA A COR DE ALGUNS ELEMENTOS
     document.querySelector('h1').style.color = cor;
     document.querySelector('.botao-cor').style.backgroundColor = cor;
