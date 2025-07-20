@@ -322,7 +322,6 @@ p.cabecalho-subtitulo{
    border: 1.6pt solid var(--secundaria);
    overflow: hidden;
    transition: all 0.5s ease;
-   cursor: pointer;
    margin-top: 2rem;
 }
 
@@ -384,6 +383,13 @@ p.cabecalho-subtitulo{
    gap: 3rem;
    max-width: 170rem;
    grid-template-columns: repeat(4, 25rem);
+}
+
+.em-breve{
+   border-radius: 3rem;
+   font-family: 2rem;
+   font-weight: 300;
+   text-align: center;
 }
 
 .contatos{

@@ -172,10 +172,14 @@ function mudarCor(cor) {
         botaoForm.style.color = 'black';
         botaoAcesso.forEach(botaoAcessoProjeto => {
             botaoAcessoProjeto.style.backgroundColor = cor;
+            botaoAcessoProjeto.style.color = 'black';
         })
     }
     else {
         botaoForm.style.color = 'white';
+        botaoAcesso.forEach(botaoAcessarProjeto2 => {
+            botaoAcessarProjeto2.style.color = 'white';
+        })
     }
 
     //Alterar todos os Hovers e Focus agora 
