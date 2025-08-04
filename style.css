@@ -545,11 +545,11 @@ footer {
    }
 
    .menu {
-      display: flex;
+      display: block;
       flex-direction: column;
       width: 90%;
       gap: 0.5rem;
-      margin: 0 auto;
+      margin: -25rem 1rem;
    }
 
    .botao-cor {
@@ -2288,4 +2288,5 @@ footer {
    .rodape-texto {
       font-size: 1rem;
    }
+
 }
