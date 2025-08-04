@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="principal">
+       <h1>Calculadora de IMC</h1>
+
+       <p>Peso (em KG): </p> <input type="number" id="fpeso">
+       <p>Altura (em M): </p><input type="number" name="fAlt" id="faltura">
+       <br><br>
+       <button onclick="calcularIMC()">Calcular</button>
+       <button onclick="limpar()" id="limparCalc">Limpar</button>
+
+       <section id="valorIMC">
+
+       </section>
+
+       <section id="classif" style="display: none;">
+
+       </section>
+
+       <section id="alerta">
+
+       </section>
+    </div>
+
+    <script src="main.js"></script>
+
+    <footer class="rodape">
+        <p class="direitos">2025 © João Pedro Viana. Todos os direitos reservados.</p>
+    </footer>
+</body>
