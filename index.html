@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>João Pedro Viana | Portfólio</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+    <div class="particulas2"></div>
+
+
+    <nav class="navegacao">
+        <p class="apresentacao" style="font-family: Verdana, sans-serif; cursor: pointer;">
+            Portfólio
+        </p>
+        <ul>
+        <!--BOTÃO DE ESCOLHER COR DO SITE-->
+        <!--BOTÃO HAMBURGUER (PARA MOBILE)-->
+        <button class="botao-hamburguer" onclick="exibirItens()"></button>
+            <ul class="menu" style="display: none;">
+                <li>
+                    <a href="#inicio" class="menu-link">INÍCIO</a>
+                </li>
+                <li>
+                    <a href="#sobre" class="menu-link">SOBRE</a>
+                </li>
+                <li>
+                    <a href="#projetos" class="menu-link">PROJETOS</a>
+                </li>
+                <li>
+                    <a href="#contato" class="menu-link">CONTATO</a>
+                </li>
+            </ul>
+        <div class="botao-cor" onclick="escolherCores()">
+
+
+            <!--CAMPO QUE SERÁ EXIBIDO AO CLICAR NO BOTÃO ACIMA-->
+            <div class="paleta-de-cores" style="display: none;">
+                <div class="color" style="background-color: #ff6666;" onclick="mudarCor('#ff6666')"></div>
+                <div class="color" style="background-color: #ff0000;" onclick="mudarCor('#ff0000')"></div>
+                <div class="color" style="background-color: #ff7b00;" onclick="mudarCor('#ff7b00')"></div>
+                <div class="color" style="background-color: #ffbd80;" onclick="mudarCor('#ffbd80')"></div>
+                <div class="color" style="background-color: #fdff81;" onclick="mudarCor('#fdff81')"></div>
+                <div class="color" style="background-color: yellow;" onclick="mudarCor('yellow')"></div>
+                <div class="color" style="background-color: #00ff00;" onclick="mudarCor('#00ff00')"></div>
+                <div class="color" style="background-color: #006d00;" onclick="mudarCor('#006d00')"></div>
+                <div class="color" style="background-color: #94ff94;" onclick="mudarCor('#94ff94')"></div>
+                <div class="color" style="background-color: #0400ff;" onclick="mudarCor('#0400ff')"></div>
+                <div class="color" style="background-color: #00a2ff;" onclick="mudarCor('#00a2ff')"></div>
+                <div class="color" style="background-color: #77c9ff;" onclick="mudarCor('#77c9ff')"></div>
+                <div class="color" style="background-color: #b463ff;" onclick="mudarCor('#b463ff')"></div>
+                <div class="color" style="background-color: #6700c7;" onclick="mudarCor('#6700c7')"></div>
+                <div class="color" style="background-color: #a200ff;" onclick="mudarCor('#a200ff')"></div>
+                <div class="color" style="background-color: #ca89ff;" onclick="mudarCor('#ca89ff')"></div>
+                <div class="color" style="background-color: #ff008c;" onclick="mudarCor('#ff008c')"></div>
+                <div class="color" style="background-color: #ff78d2;" onclick="mudarCor('#ff78d2')"></div>
+                <div class="color" style="background-color: #4d4d4d;" onclick="mudarCor('#4d4d4d')"></div>
+                <div class="color" style="background-color: #b2b2b2;" onclick="mudarCor('#b2b2b2')"></div>
+                <div class="color" style="background-color: #ffffff;" onclick="mudarCor('white')"></div>
+                <div class="color" style="background-color: #c09369;" onclick="mudarCor('#c09369')"></div>
+                <div class="color" style="background-color: #581900;" onclick="mudarCor('#581900')"></div>
+                <div class="color" style="background-color: #5a3600;" onclick="mudarCor('#5a3600')"></div>
+
+            </div>
+        </div>
+
+        <ul>
+        <li>
+            <a href="#inicio" class="menu-link" id="mudarCor">INÍCIO</a>
+        </li>
+        <li>
+            <a href="#sobre" class="menu-link" id="mudarCor">SOBRE</a>
+        </li>
+        <li>
+            <a href="#projetos" class="menu-link" id="mudarCor">PROJETOS</a>
+        </li>
+        <li>
+            <a href="#contato" class="menu-link" id="mudarCor">CONTATO</a>
+        </li>
+        </ul>
+    </nav>
+
+    <!--INÍCIO-->
+
+    <main id="inicio" class="cabecalho">
+        <img src="./image/fotoPerfil.jpeg" alt="Foto de Perfil" class="fotoPerfil">
+        <h1 class="meu-nome">João Pedro Viana</h1>
+        <div class="profissao">
+            <p class="cabecalho-subtitulo">Programador Front End</p>
+        </div>
+        <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/joão-pedro-viana-oliveira-santos/" target="_blank"
+                class="redes-sociais-link">
+                <img src="./contatos/linkedin.svg" alt="Linkedin do João Pedro Viana" class="redes-sociais-imagem">
+                <p class="redes-sociais-texto">Linkedin</p>
+            </a>
+            <a href="https://github.com/joao-pedro-viana" class="redes-sociais-link" target="_blank">
+                <img src="./contatos/github.svg" alt="Github do João Pedro Viana" class="redes-sociais-imagem">
+                <p class="redes-sociais-texto">Git Hub</p>
+            </a>
+            <a href="#contato" class="redes-sociais-link">
+                <img src="./contatos/mail.svg" alt="E-mail do João Pedro Viana" class="redes-sociais-imagem">
+                <p class="redes-sociais-texto">E-mail</p>
+            </a>
+        </div>
+    </main>
+
+    <!--SOBRE-->
+
+    <section id="sobre" class="secao">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-texto">
+                Olá! Meu nome é João Pedro Viana, sou um Programador Front End, buscando aplicar
+                meus conhecimentos. A parte de programação Web me encanta cada vez mais, na medida que vou adquirindo
+                mais
+                experiência. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer como
+                profissional.
+            </p>
+        </div>
+    </section>
+
+    <!--PROJETOS-->
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./Projetos/Calculadora de IMC/CalculadoraIMC.png" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    
+                    <h3 class="info-projetos">Calculadora de IMC</h3>
+                    <p class="paragrafo-projetos">Calculadora que fornece o Índice de Massa Corporal (IMC).</p>
+                    <a href="./Projetos/Calculadora de IMC/index.html" target="_self" class="projetos-link">
+                        <button type="submit" class="acessar-projeto" id="acessarProjeto0">Acesse aqui</button>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./Projetos/Calculadora Básica/image/CalculadoraBasica.png" alt="Projeto 2" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    
+                    <h3 class="info-projetos">Calculadora Básica</h3>
+                    <p class="paragrafo-projetos">Calculadora que realiza algumas operações matemáticas.</p>
+                    <a href="./Projetos/Calculadora Básica/index.html" target="_self" class="projetos-link">
+                        <button type="submit" class="acessar-projeto" id="acessarProjeto1">Acesse aqui</button>
+                    </a>
+                
+                </div>
+            </div>
+
+            
+            <div class="projetos-card">
+                <img src="./Projetos/To Do List/To Do List.png" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+
+                    <h3 class="info-projetos">To-Do List</h3>
+                    <p class="paragrafo-projetos">Lista de Afazeres Domésticos.</p>
+                    <a href="./Projetos/To Do List/index.html" target="_self" class="projetos-link">
+                        <button type="submit" class="acessar-projeto">Acesse aqui</button>
+                    </a>
+                </div>
+            </div>
+         <!--
+            <div class="projetos-card">
+                <img src="./image/Blue.png" alt="Projeto 4" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Projeto 4</h3>
+                    <p class="paragrafo-projetos">Descrição do Projeto 4</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section id="mais-projetos" class="mais-projetos" style="display: none;">   
+        <div class="mais-projetos-card">     
+
+         <div class="projetos-card">
+            <img src="./image/Green.png" alt="Projeto 5" class="projetos-imagem">
+            <div class="caixa-textos-projeto">
+                <h3 class="info-projetos">Projeto 5</h3>
+                <p class="paragrafo-projetos">Descrição do Projeto 5</p>
+            </div>
+         </div>    -->          
+        </div>
+    </section> 
+
+    <p class="em-breve">Em breve, terá mais...</p>
+
+  <!--  <button class="ver-mais" onclick="mostrarProjetos()">Ver Mais</button> -->
+
+    <!--CONTATO-->
+
+    <section id="contato" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+
+        <form class="formulario-contato" id="formulario" action="https://formsubmit.co/6617a976a628f995f20181348f0e894b" method="POST">
+            <h5 class="campos-formulario">Nome:</h5>
+            <div class="grupo-form">
+                <input type="text" name="nome" placeholder="Nome" class="campo-form" id="nome" required>
+            </div>
+
+            <h5 class="campos-formulario">Sobrenome:</h5>
+            <div class="grupo-form">
+                <input type="text" name="sobrenome" placeholder="Sobrenome" class="campo-form" id="sobrenome" required>
+            </div>
+
+            <h5 class="campos-formulario">E-mail:</h5>
+            <div class="grupo-form">
+                <input type="email" name="email" placeholder="Seu e-mail" class="campo-form" id="email" required>
+            </div>
+
+            <h5 class="campos-formulario">Mensagem:</h5>
+            <div class="grupo-form">
+                <textarea name="mensagem" placeholder="Digite sua mensagem" class="campo-form" id="mensagem" rows="6"
+                    required></textarea>
+            </div>
+
+            <input type="hidden" name="_subject" value="Nova mensagem do Portfólio">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+            <input type="hidden" name="_captcha" value="true">
+
+            <button type="submit" class="botao-form" id="botao-form">Enviar</button>
+        </form>
+
+    </section>
+
+    <!--RODAPÉ DE DIREITOS RESERVADOS-->
+
+    <footer class="rodape">
+        <p class="rodape-texto">
+            <span class="ano-atual"></span>© João Pedro Viana. Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <!--SCRIPT-->
+
+    <script src="main.js"></script>
+    <script>
+        const ano = new Date(); 
+        const anoAtual = ano.getFullYear();
+        const rodape = document.querySelector('.ano-atual')
+
+        rodape.innerHTML = `${anoAtual}`
+    </script>
+
+</body>
+
+</html>
