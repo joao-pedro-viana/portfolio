@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>To-Do List</h1>
+
+    <div class="principal">
+        <input type="text" name="addTarefa" id="addTarefa" placeholder="Adicione sua tarefa">
+        <button type="submit" class="add">ADICIONAR</button>
+        <button type="reset" class="reset">RESETAR</button>
+    </div>
+    <section class="itens">
+        <div class="icones" style="display: none;">
+            <img src="./icones/edit-2.svg" alt="edit" title="Editar">
+            <img src="./icones/check.svg" alt="save" title="Salvar">
+            <img src="./icones/trash-2.svg" alt="delete" title="Excluir">
+        </div>
+    </section>
+
+    <div class="div-dos-botoes">
+        <button class="salvar">Salvar</button>
+        <button class="download">Download</button>
+    </div>
+        <footer class="rodape">
+            <p class="ano-atual"></p>© João Pedro Viana. Todos os direitos reservados.
+        </footer>
+        <script src="main.js"></script>
+</body>
+
+</html>
