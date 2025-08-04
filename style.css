@@ -409,7 +409,7 @@ p.cabecalho-subtitulo {
 .em-breve {
    border-radius: 3rem;
    font-family: 2rem;
-   font-weight: 300;
+   font-weight: 700;
    text-align: center;
 }
 
@@ -2290,3 +2290,4 @@ footer {
    }
 
 }
+
