@@ -147,11 +147,10 @@ function mostrarProjetos(){
 
 document.addEventListener("DOMContentLoaded", function () {
     const coresDisponiveis = [ //ARRAY DAS CORES DISPONÍVEIS PARA ESCOLHA ALEATÓRIA
-        '#ff6666', '#ff0000', '#ff7b00', '#ffbd80', '#fdff81',
-        'yellow', '#00ff00', '#006d00', '#94ff94', '#0400ff',
-        '#00a2ff', '#77c9ff', '#b463ff', '#6700c7', '#a200ff',
-        '#ca89ff', '#ff008c', '#ff78d2', '#4d4d4d', '#b2b2b2',
-        'white', '#c09369'
+        'yellow',
+        '#00a2ff', 
+        '#ff008c',
+        'white'
     ];
 
         const corAleatoria = coresDisponiveis[Math.floor(Math.random() * coresDisponiveis.length)];
