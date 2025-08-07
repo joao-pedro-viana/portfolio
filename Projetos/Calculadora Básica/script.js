@@ -36,6 +36,5 @@ function calcular() {
     }
 }
 
-    rascunho.innerHTML = rascunho.innerHTML.slice(0, -1)
-}
+
 
