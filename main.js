@@ -14,6 +14,7 @@ function mudarCor(cor) {
     document.querySelector('.fotoPerfil').style.boxShadow = `0px 0px 3rem ${cor}`;
     document.querySelector('p.cabecalho-subtitulo').style.borderBottom = `4px solid ${cor}`;
     document.querySelector('p.cabecalho-subtitulo').style.textShadow = `2px 0 3px ${cor}`
+    document.querySelector('.fechar-popup').style.backgroundColor = cor;
 
     const botaoAcessarProjeto = document.querySelectorAll('.acessar-projeto');
     botaoAcessarProjeto.forEach(botaoAcessar => {
@@ -187,3 +188,4 @@ function fecharPopup() {
     const popup = document.getElementById('popup');
     popup.style.display = 'none';
 }
+
