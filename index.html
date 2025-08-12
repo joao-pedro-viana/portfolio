@@ -14,9 +14,11 @@
 
 
     <nav class="navegacao">
+        <a href="https://joao-pedro-viana.github.io/portfolio/" style="text-decoration: none;">
         <p class="apresentacao" style="font-family: Verdana, sans-serif; cursor: pointer;">
             Portfólio
         </p>
+        </a>
         <ul>
         <!--BOTÃO DE ESCOLHER COR DO SITE-->
         <!--BOTÃO HAMBURGUER (PARA MOBILE)-->
@@ -131,7 +133,7 @@
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
             <div class="projetos-card">
-                <img src="./Projetos/Calculadora de IMC/CalculadoraIMC.png" alt="Projeto 1" class="projetos-imagem">
+                <img src="./Projetos/Calculadora de IMC/CalculadoraIMC.png" alt="Projeto 1" class="projetos-imagem" onclick="abrirPopup()">
                 <div class="caixa-textos-projeto">
                     
                     <h3 class="info-projetos">Calculadora de IMC</h3>
@@ -144,7 +146,7 @@
             </div>
 
             <div class="projetos-card">
-                <img src="./Projetos/Calculadora Básica/image/CalculadoraBasica.png" alt="Projeto 2" class="projetos-imagem">
+                <img src="./Projetos/Calculadora Básica/image/CalculadoraBasica.png" alt="Projeto 2" class="projetos-imagem" onclick="abrirPopup()">
                 <div class="caixa-textos-projeto">
                     
                     <h3 class="info-projetos">Calculadora Básica</h3>
@@ -158,7 +160,7 @@
 
             
             <div class="projetos-card">
-                <img src="./Projetos/To Do List/To Do List.png" alt="Projeto 3" class="projetos-imagem">
+                <img src="./Projetos/To Do List/To Do List.png" alt="Projeto 3" class="projetos-imagem" onclick="abrirPopup()">
                 <div class="caixa-textos-projeto">
 
                     <h3 class="info-projetos">To-Do List</h3>
@@ -193,6 +195,14 @@
     </section> 
 
     <p class="em-breve">Em breve, terá mais...</p>
+
+    <!--POPUPS QUE MOSTRAM AS IMAGENS COMPLETAS DOS PROJETOS-->
+    <div class="popup" id="popup" style="display: none;">
+        <span class="fechar-popup" onclick="fecharPopup()">X</span>
+        <img src="none" class="imagem-popup" width="90%" height="70%">
+        <p class="descricao-popup"></p>
+        <button class="acessar-projeto" style="margin-top: 5%;">Confira o projeto</button>
+    </div>
 
   <!--  <button class="ver-mais" onclick="mostrarProjetos()">Ver Mais</button> -->
 
@@ -254,5 +264,6 @@
 </body>
 
 </html>
+
 
 
