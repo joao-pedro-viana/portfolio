@@ -155,4 +155,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const corAleatoria = coresDisponiveis[Math.floor(Math.random() * coresDisponiveis.length)];
         mudarCor(corAleatoria);
+
 });
+
+
+//FUNÇÃO PARA ABRIR OS POPUPS DAS IMAGENS DOS PROJETOS
+function abrirPopup(imagem, descricao) {
+    const popup = document.getElementById('popup');
+    const imagemPopup = popup.querySelector('.imagem-popup');
+    const descricaoPopup = popup.querySelector('.descricao-popup');
+
+    imagemPopup.src = imagem;
+    descricaoPopup.textContent = descricao;
+
+    popup.style.display = 'block';
+
+    //Preciso que cada projeto exiba a imagem e descrição correta, ao ser clicado.
+
+    const projetos = document.querySelectorAll('.projetos-imagem');
+    projetos.forEach(projeto => {
+        projeto.addEventListener('click', function () {
+            const imagemSrc = this.src;
+            const descricaoTexto = this.nextElementSibling.querySelector('.paragrafo-projetos').textContent;
+
+            abrirPopup(imagemSrc, descricaoTexto);
+        });
+    });
+}
+
+function fecharPopup() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'none';
+}
