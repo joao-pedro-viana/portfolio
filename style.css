@@ -596,6 +596,14 @@ footer {
       padding: 1rem;
    }
 
+   .apresentacao{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: -5rem;
+   }
+
    .menu {
       display: block;
       flex-direction: column;
@@ -615,6 +623,8 @@ footer {
       padding: 1.3rem;
       border-radius: 90%;
       position: absolute;
+      left: 12rem;
+      right: 5rem;
    }
 
    .menu-link {
@@ -2399,6 +2409,7 @@ footer {
    }
 
 }
+
 
 
 
