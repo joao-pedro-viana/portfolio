@@ -1,5 +1,4 @@
-# Portfólio
-# Portfólio do João Pedro Viana.
+# Portfólio do João Pedro Viana.
 ## Seja bem-vindo(a) ao meu portfólio!
 
 ### Tecnologias utilizadas:  
