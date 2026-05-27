@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhador de Número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Digite dois números abaixos e tente adivinhar qual é o número sorteado.</h2>
+
+    <span id="alert"></span>
+
+    <p class="dica"></p>
+
+<div class="main-content">
+    <span class="numero"></span>
+
+        <div class="numeros">
+            <input type="number" name="min" id="min" min="0" placeholder="Número mínimo">
+            <button class="random">Sortear número</button>
+            <input type="number" name="max" id="max" min="0" placeholder="Número máximo">
+        </div><br>
+
+        <input type="number" min="0" id="palpite" placeholder="Tente adivinhar">
+        <button class="try">Tentar</button><br><br>
+        <button class="reset">Resetar</button>
+</div>
+
+    <footer>
+        <span></span>
+        &copy;<p>João Pedro Viana. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
