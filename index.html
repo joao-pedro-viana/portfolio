@@ -4,268 +4,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
     <title>João Pedro Viana | Portfólio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/smart.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
 <body>
-    <div class="particulas"></div>
-    <div class="particulas2"></div>
-
-
-    <nav class="navegacao">
-        <a href="https://joao-pedro-viana.github.io/portfolio/" style="text-decoration: none;">
-        <p class="apresentacao" style="font-family: Verdana, sans-serif; cursor: pointer;">
-            Portfólio
-        </p>
-        </a>
-        <ul>
-        <!--BOTÃO DE ESCOLHER COR DO SITE-->
-        <!--BOTÃO HAMBURGUER (PARA MOBILE)-->
-        <button class="botao-hamburguer" onclick="exibirItens()">
-            <ul class="menu" style="display: none;">
-                <li>
-                    <a href="#inicio" class="menu-link">INÍCIO</a>
-                </li>
-                <li>
-                    <a href="#sobre" class="menu-link">SOBRE</a>
-                </li>
-                <li>
-                    <a href="#projetos" class="menu-link">PROJETOS</a>
-                </li>
-                <li>
-                    <a href="#contato" class="menu-link">CONTATO</a>
-                </li>
-            </ul>
+    <header>
+        <span>Portfólio</span>
+        <button id="btnColor">
+            <i class="fa-solid fa-palette"></i>
         </button>
-        <div class="botao-cor" onclick="escolherCores()">
+        <button id="themePortfolio">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+        
+        <button id="menu-hamb">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-
-            <!--CAMPO QUE SERÁ EXIBIDO AO CLICAR NO BOTÃO ACIMA-->
-            <div class="paleta-de-cores" style="display: none;">
-                <div class="color" style="background-color: #ff6666;" onclick="mudarCor('#ff6666')"></div>
-                <div class="color" style="background-color: #ff0000;" onclick="mudarCor('#ff0000')"></div>
-                <div class="color" style="background-color: #ff7b00;" onclick="mudarCor('#ff7b00')"></div>
-                <div class="color" style="background-color: #ffbd80;" onclick="mudarCor('#ffbd80')"></div>
-                <div class="color" style="background-color: #fdff81;" onclick="mudarCor('#fdff81')"></div>
-                <div class="color" style="background-color: yellow;" onclick="mudarCor('yellow')"></div>
-                <div class="color" style="background-color: #00ff00;" onclick="mudarCor('#00ff00')"></div>
-                <div class="color" style="background-color: #006d00;" onclick="mudarCor('#006d00')"></div>
-                <div class="color" style="background-color: #2bb64e;" onclick="mudarCor('#2bb64e')"></div>
-                <div class="color" style="background-color: #94ff94;" onclick="mudarCor('#94ff94')"></div>
-                <div class="color" style="background-color: #0400ff;" onclick="mudarCor('#0400ff')"></div>
-                <div class="color" style="background-color: #00a2ff;" onclick="mudarCor('#00a2ff')"></div>
-                <div class="color" style="background-color: #77c9ff;" onclick="mudarCor('#77c9ff')"></div>
-                <div class="color" style="background-color: #b463ff;" onclick="mudarCor('#b463ff')"></div>
-                <div class="color" style="background-color: #6700c7;" onclick="mudarCor('#6700c7')"></div>
-                <div class="color" style="background-color: #a200ff;" onclick="mudarCor('#a200ff')"></div>
-                <div class="color" style="background-color: #ca89ff;" onclick="mudarCor('#ca89ff')"></div>
-                <div class="color" style="background-color: #ff008c;" onclick="mudarCor('#ff008c')"></div>
-                <div class="color" style="background-color: #ff78d2;" onclick="mudarCor('#ff78d2')"></div>
-                <div class="color" style="background-color: #4d4d4d;" onclick="mudarCor('#4d4d4d')"></div>
-                <div class="color" style="background-color: #b2b2b2;" onclick="mudarCor('#b2b2b2')"></div>
-                <div class="color" style="background-color: #ffffff;" onclick="mudarCor('white')"></div>
-                <div class="color" style="background-color: #c09369;" onclick="mudarCor('#c09369')"></div>
-                <div class="color" style="background-color: #581900;" onclick="mudarCor('#581900')"></div>
-                <div class="color" style="background-color: #5a3600;" onclick="mudarCor('#5a3600')"></div>
-
-            </div>
-        </div>
-
-        <ul>
-        <li>
-            <a href="#inicio" class="menu-link" id="mudarCor">INÍCIO</a>
-        </li>
-        <li>
-            <a href="#sobre" class="menu-link" id="mudarCor">SOBRE</a>
-        </li>
-        <li>
-            <a href="#projetos" class="menu-link" id="mudarCor">PROJETOS</a>
-        </li>
-        <li>
-            <a href="#contato" class="menu-link" id="mudarCor">CONTATO</a>
-        </li>
+        <ul id="links-desktop">
+            <a href="#inicio">
+                <li>INÍCIO</li>
+            </a>
+            <a href="#sobre">
+                <li>SOBRE</li>
+            </a>
+            <a href="#projetos">
+                <li>PROJETOS</li>
+            </a>
+            <a href="#contato">
+                <li>CONTATO</li>
+            </a>
         </ul>
-    </nav>
+    </header>
 
-    <!--INÍCIO-->
+    <ul id="links-mobile" style="display: none;">
+        <a href="#inicio">
+            <li>INÍCIO</li>
+        </a>
+        <a href="#sobre">
+            <li>SOBRE</li>
+        </a>
+        <a href="#projetos">
+            <li>PROJETOS</li>
+        </a>
+        <a href="#contato">
+            <li>CONTATO</li>
+        </a>
+    </ul>
 
-    <main id="inicio" class="cabecalho">
-        <img src="./image/fotoPerfil.jpeg" alt="Foto de Perfil" class="fotoPerfil">
-        <h1 class="meu-nome">João Pedro Viana</h1>
-        <div class="profissao">
-            <p class="cabecalho-subtitulo">Programador Front End</p>
+    <div class="paleta-de-cores" style="display: none;">
+        <button class="close">X</button>
+        <h2>Escolha uma cor abaixo para o tema do Portfólio: </h2>
+        <div class="color">
+            <button style="background-color: #00c2ff; box-shadow: 0 0 .5rem .1rem #00c2ff;"
+                onclick="mudarCor('#00c2ff')">Azul</button>
+            <button style="background-color: yellow; box-shadow: 0 0 .5rem .1rem yellow;"
+                onclick="mudarCor('yellow')">Amarelo</button>
+            <button style="background-color: var(--whitecolor); box-shadow: 0 0 .5rem .1rem var(--whitecolor);" 
+                onclick="mudarCor('var(--whitecolor)')" id="corBranca">Branco</button>
+            <button style="background-color: #ff00c8; box-shadow: 0 0 .5rem .1rem #ff00c8;"
+                onclick="mudarCor('#ff00c8')">Rosa</button>
+            <button style="background-color: #30bb30; box-shadow: 0 0 .5rem .1rem #30bb30;"
+                onclick="mudarCor('#30bb30')">Verde</button>
+            <button style="background-color: #ff9100; box-shadow: 0 0 .5rem .1rem #ff9100;"
+                onclick="mudarCor('#ff9100')">Laranja</button>
+            <button style="background-color: #9900ff; box-shadow: 0 0 .5rem .1rem #9900ff;"
+                onclick="mudarCor('#9900ff')">Roxo</button>
+            <button style="background-color: red; box-shadow: 0 0 .5rem .1rem red;"
+                onclick="mudarCor('red')">Vermelho</button>
+            <button style="background-color: #002aff; box-shadow: 0 0 .5rem .1rem #002aff;"
+                onclick="mudarCor('#002aff')">Azul Escuro</button>
+            <button style="background-color: #15ff00; box-shadow: 0 0 .5rem .1rem #15ff00;"
+                onclick="mudarCor('#15ff00')">Limão</button>
+            <button style="background-color: brown; box-shadow: 0 0 .5rem .1rem brown;"
+                onclick="mudarCor('brown')">Marrom</button>
+            <button style="background-color: #ffb36c; box-shadow: 0 0 .5rem .1rem #ffb36c;"
+                onclick="mudarCor('#ffb36c')">Bege</button>
+            <button style="background-color: #79e0ff; box-shadow: 0 0 .5rem .1rem #79e0ff;"
+                onclick="mudarCor('#79e0ff')">Azul Claro</button>
+            <button style="background-color: #ffff7a; box-shadow: 0 0 .5rem .1rem #ffff7a;"
+                onclick="mudarCor('#ffff7a')">Amarelo Claro</button>
+            <button style="background-color: gray; box-shadow: 0 0 .5rem .1rem gray;"
+                onclick="mudarCor('gray')">Cinza</button>
+            <button style="background-color: #ff80c6; box-shadow: 0 0 .5rem .1rem #ff80c6;"
+                onclick="mudarCor('#ff80c6')">Rosa Claro</button>
+            <button style="background-color: #79ff79; box-shadow: 0 0 .5rem .1rem #79ff79;"
+                onclick="mudarCor('#79ff79')">Verde Claro</button>
+            <button style="background-color: #ffc67c; box-shadow: 0 0 .5rem .1rem #ffc67c;"
+                onclick="mudarCor('#ffc67c')">Laranja Claro</button>
+            <button style="background-color: #cc80ff; box-shadow: 0 0 .5rem .1rem #cc80ff;"
+                onclick="mudarCor('#cc80ff')">Lilás</button>
+            <button style="background-color: #ff7e7e; box-shadow: 0 0 .5rem .1rem #ff7e7e;"
+                onclick="mudarCor('#ff7e7e')">Vermelho Claro</button>
         </div>
-        <div class="redes-sociais">
-            <a href="https://www.linkedin.com/in/joão-pedro-viana-oliveira-santos/" target="_blank"
-                class="redes-sociais-link">
-                <img src="./contatos/linkedin.svg" alt="Linkedin do João Pedro Viana" class="redes-sociais-imagem">
-                <p class="redes-sociais-texto">Linkedin</p>
-            </a>
-            <a href="https://github.com/joao-pedro-viana" class="redes-sociais-link" target="_blank">
-                <img src="./contatos/github.svg" alt="Github do João Pedro Viana" class="redes-sociais-imagem">
-                <p class="redes-sociais-texto">Git Hub</p>
-            </a>
-            <a href="#contato" class="redes-sociais-link">
-                <img src="./contatos/mail.svg" alt="E-mail do João Pedro Viana" class="redes-sociais-imagem">
-                <p class="redes-sociais-texto">E-mail</p>
-            </a>
-        </div>
-    </main>
-
-    <!--SOBRE-->
-
-    <section id="sobre" class="secao">
-        <h2 class="sobre-titulo">Sobre Mim</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-texto">
-                Olá, meu nome é João Pedro Viana, seja bem vindo(a) ao meu portfólio.<br><br> Sou um Programador Front End, buscando aplicar
-                meus conhecimentos.<br><br>A parte de programação Web me encanta cada vez mais, na medida que vou adquirindo
-                mais
-                experiência. Estou em busca de novos desafios e oportunidades para aprender e crescer como
-                profissional.
-            </p>
-        </div>
-    </section>
-
-    <!--PROJETOS-->
-
-    <section id="projetos" class="projetos">
-        <h2 class="projetos-titulo">Meus Projetos</h2>
-        <div class="projetos-caixa">
-            <div class="projetos-card">
-                <img src="./Projetos/Calculadora de IMC/CalculadoraIMC.png" alt="Projeto 1" class="projetos-imagem" onclick="abrirPopup()">
-                <div class="caixa-textos-projeto">
-                    
-                    <h3 class="info-projetos">Calculadora de IMC</h3>
-                    <p class="paragrafo-projetos">Calculadora que fornece o Índice de Massa Corporal (IMC).</p>
-                    <a href="./Projetos/Calculadora de IMC/index.html" target="_self" class="projetos-link">
-                        <button type="submit" class="acessar-projeto" id="acessarProjeto0">Acesse aqui</button>
-                    </a>
-                    
-                </div>
-            </div>
-
-            <div class="projetos-card">
-                <img src="./Projetos/Calculadora Básica/image/CalculadoraBasica.png" alt="Projeto 2" class="projetos-imagem" onclick="abrirPopup()">
-                <div class="caixa-textos-projeto">
-                    
-                    <h3 class="info-projetos">Calculadora Básica</h3>
-                    <p class="paragrafo-projetos">Calculadora que realiza algumas operações matemáticas.</p>
-                    <a href="./Projetos/Calculadora Básica/index.html" target="_self" class="projetos-link">
-                        <button type="submit" class="acessar-projeto" id="acessarProjeto1">Acesse aqui</button>
-                    </a>
-                
-                </div>
-            </div>
-
-            <!--
-            <div class="projetos-card">
-                <img src="./Projetos/To Do List/To Do List.png" alt="Projeto 3" class="projetos-imagem" onclick="abrirPopup()">
-                <div class="caixa-textos-projeto">
-
-                    <h3 class="info-projetos">To-Do List</h3>
-                    <p class="paragrafo-projetos">Lista de Afazeres Domésticos.</p>
-                    <a href="./Projetos/To Do List/index.html" target="_self" class="projetos-link">
-                        <button type="submit" class="acessar-projeto">Acesse aqui</button>
-                    </a>
-                </div>
-            </div>
-         
-            <div class="projetos-card">
-                <img src="./image/Blue.png" alt="Projeto 4" class="projetos-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Projeto 4</h3>
-                    <p class="paragrafo-projetos">Descrição do Projeto 4</p>
-                </div>
-            </div> 
-        </div>
-    </section>
-
-    <section id="mais-projetos" class="mais-projetos" style="display: none;">   
-        <div class="mais-projetos-card">     
-
-         <div class="projetos-card">
-            <img src="./image/Green.png" alt="Projeto 5" class="projetos-imagem">
-            <div class="caixa-textos-projeto">
-                <h3 class="info-projetos">Projeto 5</h3>
-                <p class="paragrafo-projetos">Descrição do Projeto 5</p>
-            </div>
-         </div>    -->          
-        </div>
-    </section> 
-
-    <p class="em-breve">Em breve, terá mais...</p>
-
-    <!--POPUPS QUE MOSTRAM AS IMAGENS COMPLETAS DOS PROJETOS-->
-    <div class="popup" id="popup" style="display: none;">
-        <span class="fechar-popup" onclick="fecharPopup()">X</span>
-        <img src="none" class="imagem-popup" width="90%" height="70%">
-        <p class="descricao-popup"></p>
-        <!--<button class="acessar-projeto" style="margin-top: 5%;">Confira o projeto</button> -->
     </div>
 
-  <!--  <button class="ver-mais" onclick="mostrarProjetos()">Ver Mais</button> -->
+    <div class="particulas"></div>
+    <div class="particulas2"></div>
+    <div class="particulas3"></div>
+    <div class="particulas4"></div>
 
-    <!--CONTATO-->
-
-    <section id="contato" class="contatos">
-        <h2 class="contatos-titulo">Entre em Contato</h2>
-
-        <form class="formulario-contato" id="formulario" action="https://formsubmit.co/6617a976a628f995f20181348f0e894b" method="POST">
-            <h5 class="campos-formulario">Nome:</h5>
-            <div class="grupo-form">
-                <input type="text" name="nome" placeholder="Nome" class="campo-form" id="nome" required>
+    <section class="about" id="sobre">
+        <img src="./image/fotoPerfil.jpeg" alt="foto do João" class="photoPortfolio">
+        <h1>João Pedro Viana</h1> <br>
+        <h3>Programador Front End</h3>
+        <div class="buttons-about">
+            <div class="button-about">
+                <a href="https://www.linkedin.com/in/joão-pedro-viana-oliveira-santos" target="_blank"><i
+                        class="fa-brands fa-square-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/joão-pedro-viana-oliveira-santos" target="_blank"><button>Linkedin</button></a>
             </div>
-
-            <h5 class="campos-formulario">Sobrenome:</h5>
-            <div class="grupo-form">
-                <input type="text" name="sobrenome" placeholder="Sobrenome" class="campo-form" id="sobrenome" required>
+            <div class="button-about">
+                <a href="https://github.com/joao-pedro-viana/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/joao-pedro-viana/" target="_blank"><button>Git Hub</button></a>
             </div>
-
-            <h5 class="campos-formulario">E-mail:</h5>
-            <div class="grupo-form">
-                <input type="email" name="email" placeholder="Seu e-mail" class="campo-form" id="email" required>
+            <div class="button-about">
+                <a href="index.html#contato"><i class="fa fa-envelope"></i></a>
+                <a href="index.html#contato"><button type="email">E-mail</button></a>
             </div>
-
-            <h5 class="campos-formulario">Mensagem:</h5>
-            <div class="grupo-form">
-                <textarea name="mensagem" placeholder="Digite sua mensagem" class="campo-form" id="mensagem" rows="6"
-                    required></textarea>
-            </div>
-
-            <input type="hidden" name="_subject" value="Nova mensagem do Portfólio">
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
-            <input type="hidden" name="_captcha" value="true">
-
-            <button type="submit" class="botao-form" id="botao-form">Enviar</button>
-        </form>
-
+        </div>
     </section>
 
-    <!--RODAPÉ DE DIREITOS RESERVADOS-->
+    <div class="animate___animated
+            animate_fadeIn
+            animate_infinite" id="show">
+        <div class="about-me">
+            <h2>Sobre Mim</h2>
+            <p>
+                <span></span><br><br>
 
-    <footer class="rodape">
-        <p class="rodape-texto">
-            <span class="ano-atual"></span>© João Pedro Viana. Todos os direitos reservados.
-        </p>
+                Meu nome é João Pedro Viana, seja bem vindo(a) ao meu portfólio. <br><br>
+
+                Sou um Programador Front End, buscando aplicar meus conhecimentos. <br><br>
+
+                A parte de programação Web me encanta cada vez mais, na medida que vou adquirindo
+                mais experiência. Estou em busca de novos desafios e oportunidades para aprender
+                e crescer como profissional.
+            </p>
+        </div>
+    </div>
+
+    <div class="jobs" id="projetos">
+        <h2>Meus Projetos</h2>
+
+        <div style="display: flex; margin: 2% auto; gap: 1%;">
+            <input type="text" name="pesquisaProj" id="pesquisaProj" placeholder="Pesquisar...">
+            <button id="searchProj">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="my-projects">
+        </div>
+
+        <div class="no_results" style="display: none;">
+            <p>Nenhum resultado encontrado.</p>
+        </div>
+
+        <p class="more">Em breve, terá mais...</p>
+    </div>
+
+    <div class="contact" id="contato">
+        <h2>Entre em Contato</h2>
+
+        <form action="https://formsubmit.co/6617a976a628f995f20181348f0e894b" method="post">
+            <h3>Nome:</h3>
+            <input type="text" name="nome" id="" placeholder="Digite seu nome..." required>
+
+            <h3>Sobrenome:</h3>
+            <input type="text" name="sobrenome" id="" placeholder="Digite seu sobrenome..." required>
+
+            <h3>E-mail:</h3>
+            <input type="email" name="email" id="" placeholder="Digite seu e-mail..." required>
+
+            <h3>Mensagem:</h3>
+            <textarea name="mensagem" id="" placeholder="Digite sua mensagem..." required></textarea>
+
+            <h3>Sugestão de Desafio (opcional)</h3>
+            <textarea name="desafio" placeholder="Mande sua sugestão de desafio para eu fazer..." id=""></textarea>
+
+            <input type="hidden" name="_subject" value="Nova mensagem do Portfólio">
+            <input type="hidden" name="_captcha" value="true">
+
+            <button type="submit" name="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <div>
+            <span></span>
+            <p>&copy; João Pedro Viana. Todos os direitos reservados.</p>
+        </div>
+
+        <div class="contact_footer">
+            <a href="https://www.linkedin.com/in/joão-pedro-viana-oliveira-santos" target="_blank">
+                <i class="fa-brands fa-square-linkedin"></i></a>
+
+            <a href="https://github.com/joao-pedro-viana" target="_blank">
+                <i class="fa-brands fa-github"></i></a>
+
+            <a href="index.html#contato">
+            <i class="fa fa-envelope"></i></a>
+        </div>
     </footer>
-
-    <!--SCRIPT-->
-
-    <script src="main.js"></script>
-    <script>
-        const ano = new Date(); 
-        const anoAtual = ano.getFullYear();
-        const rodape = document.querySelector('.ano-atual')
-
-        rodape.innerHTML = `${anoAtual}`
-    </script>
-
+    <script src="./js/dark.js"></script>
+    <script src="./js/color.js"></script>
+    <script src="./js/saveColor.js"></script>
+    <script src="./js/menuMobile.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/project.js"></script>
 </body>
 
 </html>
-
-
-
-
