@@ -6,10 +6,10 @@ function mostrarMenuMobile() {
     menuMobile.style.display = menuMobile.style.display === 'block' ? 'none' : 'block';
 
     if (menuMobile.style.display == 'block') {
-        btnHamb.innerHTML = '<i class="fa-solid fa-close" style="color: var(--whitecolor); scale: 2;"></i>'
+        btnHamb.innerHTML = '<i class="fa-solid fa-close" style="color: var(--blackcolor); scale: 2;"></i>'
     }
     else {
-        btnHamb.innerHTML = '<i class="fa-solid fa-bars" style="scale: 2; color: var(--whitecolor);"></i>'
+        btnHamb.innerHTML = '<i class="fa-solid fa-bars" style="scale: 2; color: var(--blackcolor);"></i>'
     }
 }
 
