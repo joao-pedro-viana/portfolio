@@ -2,7 +2,7 @@
 const searchBar = document.getElementById('pesquisaProj')
 const searchLupa = document.getElementById('searchProj')
 
-searchLupa.addEventListener('click', pesquisarItem)
+searchBar.addEventListener('input', pesquisarItem)
 
 function pesquisarItem() {
     const valor = formatText(searchBar.value)
