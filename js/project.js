@@ -14,7 +14,7 @@ const project = [
             link: './projetos/CalculadoraBasica/index.html'
         },
         {
-            nome: 'Estágio no Site do Turismo em Pirassununga',
+            nome: 'Estágio na Secretaria de Turismo em Pirassununga',
             descricao: 'Estágio na Secretaria de Turismo de Pirassununga - Continuidade, Manutenção e Atualizações do Site do Turismo de Pirassununga',
             imagem: './projetos/Setor de Turismo de Pirassununga/SecturPira.png',
             link: 'https://turismo.pirassununga.sp.gov.br'
