@@ -34,8 +34,10 @@
          background-color: var(--blackcolor);
          width: 20%;
          border-radius: 10px 0 10px 10px;
-         position: absolute;
+         position: fixed;
+         z-index: 1;
          left: 70%;
+         top: 10%;
 
          a {
             color: var(--whitecolor);
