@@ -27,7 +27,7 @@ body.light {
    --lighttheme: #404040;
 
    span, h1, h3, .more{
-      -webkit-text-stroke: .3px var(--whitecolor);
+      -webkit-text-stroke: .5px var(--whitecolor);
    }
   
 }
