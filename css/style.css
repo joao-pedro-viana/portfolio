@@ -49,6 +49,9 @@ body {
       display: flex;
       height: 5rem;
       align-items: center;
+      position: fixed;
+      top: 0;
+      z-index: 1;
 
       span {
          color: var(--primary-color);
@@ -149,17 +152,17 @@ body {
       z-index: 2;
 
       .close {
-         font: bold 1rem 'Poppins';
-         background-color: var(--whitecolor);
-         width: 3rem;
-         border-radius: 50%;
-         text-align: center;
-         border: 2px solid var(--blackcolor);
-         position: absolute;
-         cursor: pointer;
-         margin: 0 0 0 0;
          z-index: 1;
-         color: var(--blackcolor);
+         position: fixed;
+         margin: 0 90% 0 0;
+         background: none;
+         border: none;
+         padding: 0 3% 0 0;
+
+           i{
+            color: var(--whitecolor);
+            scale: 1.5;
+           }
       }
 
       h2 {
@@ -258,6 +261,7 @@ body {
          border-radius: 50%;
          border: 2px solid var(--blackcolor);
          display: flex;
+         margin: 5% 0 0 0;
          justify-content: center;
          box-shadow: 0 0 1rem 0.5rem var(--primary-color);
          animation: fotoFlutuando 2s ease-in-out infinite;
