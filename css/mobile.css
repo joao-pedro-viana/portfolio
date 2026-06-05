@@ -65,6 +65,10 @@
          }
       }
 
+      .about .photoPortfolio{
+         margin: 15% 0 0 0;
+      }
+
       .about-me {
          background-color: transparent;
          margin: 5% auto;
