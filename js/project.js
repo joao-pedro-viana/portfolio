@@ -7,12 +7,12 @@ const project = [
             imagem: './projetos/CalculadoraIMC/CalculadoraIMC.png',
             link: './projetos/CalculadoraIMC/index.html',
         },
-        {
+        /*{
             nome: 'Calculadora Básica',
             descricao: 'Calculadora que realiza operações matemáticas.',
             imagem: './projetos/CalculadoraBasica/image/CalculadoraBasica.png',
             link: './projetos/CalculadoraBasica/index.html'
-        },
+        },*/
         {
             nome: 'Estágio na Secretaria de Turismo em Pirassununga',
             descricao: 'Estágio na Secretaria de Turismo de Pirassununga - Continuidade, Manutenção e Atualizações do Site do Turismo de Pirassununga',
