@@ -80,6 +80,7 @@ body {
          cursor: pointer;
          position: absolute;
          left: 45%;
+         transform: rotateZ(-30deg);
       }
 
       #menu-hamb {
