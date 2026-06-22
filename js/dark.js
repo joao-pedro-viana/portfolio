@@ -5,6 +5,9 @@ function alternarTema() {
 
     document.body.classList.toggle('light')
 
+    btnTheme.classList.toggle('fa-regular')
+    btnTheme.classList.toggle('fa-moon')
+
     if (document.body.classList.contains('light')) {
         btnWhite.innerText = 'Preto'
         localStorage.setItem('portfolioTheme', 'light')
