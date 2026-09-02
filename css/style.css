@@ -23,13 +23,8 @@ html {
 body.light {
    --blackcolor: #ffffff;
    --whitecolor: #000000;
-   --terciarycolor: #acacac;
-   --lighttheme: #404040;
-
-   span, h1, h3, .more{
-      -webkit-text-stroke: .5px var(--whitecolor);
-   }
-  
+   --terciarycolor: #7f7f7f;
+   --lighttheme: #404040;  
 }
 
 body {
