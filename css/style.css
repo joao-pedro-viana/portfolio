@@ -25,6 +25,10 @@ body.light {
    --whitecolor: #000000;
    --terciarycolor: #7f7f7f;
    --lighttheme: #404040;  
+
+   form input::placeholder, form textarea::placeholder{
+      color: var(--whitecolor);
+   }
 }
 
 body {
