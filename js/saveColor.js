@@ -70,8 +70,8 @@ function mudarCor(corTema) {
             this.style.color = corTema
             document.documentElement.style.setProperty('--primary-color', corTema)
 
-            if (corTema == 'var(--whitecolor)'){
-                document.documentElement.style.setProperty('--primary-color', 'var(--whitecolor)')
+            if (corTema == 'var(--whitecolor)' && document.body.classList.contains('light')){
+                document.documentElement.style.setProperty('--primary-color', '#000000')
             }
         })
         link.addEventListener('mouseleave', function () {
