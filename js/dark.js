@@ -30,5 +30,4 @@ window.onload = function () {
     }
 }
 
-
 btnTheme.addEventListener('click', alternarTema)

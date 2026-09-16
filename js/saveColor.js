@@ -69,6 +69,10 @@ function mudarCor(corTema) {
         link.addEventListener('mouseenter', function () {
             this.style.color = corTema
             document.documentElement.style.setProperty('--primary-color', corTema)
+
+            if (corTema == 'var(--whitecolor)'){
+                document.documentElement.style.setProperty('--primary-color', 'var(--whitecolor)')
+            }
         })
         link.addEventListener('mouseleave', function () {
             this.style.color = 'var(--whitecolor)'
