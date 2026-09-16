@@ -10,8 +10,10 @@ function getEstiloContraste(corTema) {
     const branco = corTema === 'var(--whitecolor)'
     const amarelo = corTema === '#ffff7a' || corTema === 'yellow'
 
-    if (branco || amarelo) {
+    if (amarelo) {
         return { cor: '#000000', borda: branco ? '2px solid var(--blackcolor)' : '' }
+    } else{
+        return { cor: 'var(--blackcolor)', borda: branco ? '2px solid var(--blackcolor)' : '' }
     }
     return { cor: 'var(--whitecolor)', borda: '' }
 }
