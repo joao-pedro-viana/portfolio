@@ -18,6 +18,14 @@ function getEstiloContraste(corTema) {
     return { cor: 'var(--whitecolor)', borda: '' }
 }
 
+function bordaElementos(corTema){
+    const amarelo = corTema === '#ffff7a' || corTema === '#ffff00'
+
+    if(amarelo){
+        return {bordaExt: '0.8px solid #000000'}
+    }
+}
+
 function mudarCor(corTema) {
     localStorage.setItem('portfolioThemeColor', corTema)
 
@@ -94,6 +102,7 @@ function mudarCor(corTema) {
 
     // Contraste de texto/borda nos botões e ícones, dependendo da cor escolhida
     const { cor, borda } = getEstiloContraste(corTema)
+    const { bordaExt } = bordaElementos(corTema)
     const botoesProjetos = [...document.querySelectorAll('.info-projects>a>button')]
     const elementosContraste = [
         document.querySelector('#btnColor i'),
@@ -103,6 +112,7 @@ function mudarCor(corTema) {
 
     aplicarEstilo('color', cor, ...botoesProjetos, ...elementosContraste)
     aplicarEstilo('border', borda, ...botoesProjetos)
+    aplicarEstilo('-webkit-text-stroke', bordaExt, ...itemsColor)
 }
 
 // Salva a cor escolhida, até que o usuário selecione outra
