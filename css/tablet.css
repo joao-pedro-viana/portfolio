@@ -35,8 +35,9 @@
          width: 20%;
          height: auto;
          border-radius: 10px 0 10px 10px;
-         position: absolute;
+         position: fixed;
          left: 70%;
+         top: 10%;
 
          a {
             color: var(--whitecolor);
@@ -49,6 +50,26 @@
          a li:hover {
             color: var(--primary-color);
             transition: 0.45s ease;
+         }
+
+         a li:visited {
+            text-decoration: none;
+            color: var(--whitecolor);
+         }
+
+         a li::after {
+            content: '';
+            height: 3px;
+            width: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: var(--primary-color);
+            transition: width 0.5s ease;
+         }
+
+         a li:hover::after {
+            width: 100%;
          }
       }
 

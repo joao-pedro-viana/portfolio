@@ -66,7 +66,7 @@ function mudarCor(corTema) {
     )
 
     // Hover nos links do menu (mouseenter + mouseleave num único loop)
-    const linksMenu = [...document.querySelectorAll('header>ul>a>li, .button-about>a>button, #links-mobile a li')]
+    const linksMenu = [...document.querySelectorAll('header>ul>a>li, .button-about>a>button, #links-mobile>a>li')]
     linksMenu.forEach(link => {
         link.addEventListener('mouseenter', function () {
             this.style.color = corTema

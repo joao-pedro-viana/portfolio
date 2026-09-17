@@ -128,8 +128,6 @@ body {
             transition: width 0.5s ease;
          }
 
-         ;
-
          a li:hover::after {
             width: 100%;
          }
