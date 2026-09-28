@@ -107,7 +107,7 @@ function mudarCor(corTema) {
 
 // Salva a cor escolhida, até que o usuário selecione outra
 function salvarCor() {
-    const corSalva = localStorage.getItem('portfolioThemeColor') ?? '#002aff'
+    const corSalva = localStorage.getItem('portfolioThemeColor') ?? '#00c2ff'
     mudarCor(corSalva)
 }
 
