@@ -22,8 +22,8 @@ let alerta = document.querySelector('section#alerta')
     }
 
     else if(IMC > 24.9 && IMC < 29.9){
-        classif.innerHTML = `  Pré-Obeso!`
-        alerta.innerHTML = `Pratique um pouco de exercícios físicos`
+        classif.innerHTML = `  Pré-Obesidade!`
+        alerta.innerHTML = `Recomendamos um pouco de exercícios físicos para prática`
     }
     
     else if(IMC > 29.9 && IMC < 34.9){
