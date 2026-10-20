@@ -20,6 +20,11 @@ html {
    scroll-behavior: smooth;
 }
 
+::selection{
+   color: var(--blackcolor);
+   background-color: var(--primary-color);
+}
+
 body.light {
    --blackcolor: #ffffff;
    --whitecolor: #000000;
