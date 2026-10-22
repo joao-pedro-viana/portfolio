@@ -53,7 +53,7 @@ function renderizarProjetos() {
     campoProject.innerHTML = html
 
     //FUNÇÃO QUE EXIBE MODAL DE CADA PROJETO
-    const projeto = document.querySelectorAll('.card-project')
+    const projeto = document.querySelectorAll('.card-project img')
 
     function mostrarModal(event) {
         const imgElement = event.currentTarget.querySelector('img');

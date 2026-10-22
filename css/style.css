@@ -708,6 +708,7 @@ body {
          i:hover {
             transform: scale(1.2);
             transition: 0.5s;
+            color: var(--primary-color);
          }
       }
    }

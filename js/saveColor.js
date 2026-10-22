@@ -81,6 +81,16 @@ function mudarCor(corTema) {
         })
     })
 
+    const iconsFooter = [...document.querySelectorAll('footer .contact_footer i')]
+    iconsFooter.forEach(iconFooter =>{
+        iconFooter.addEventListener('mouseenter', function(){
+            this.style.color = corTema
+        })
+        iconFooter.addEventListener('mouseleave', function () {
+            this.style.color = 'var(--whitecolor)'
+        })
+    })
+
     // Foco nos inputs do formulário (focus + blur num único loop)
     const camposForm = [...document.querySelectorAll('form>input, form>textarea')]
     camposForm.forEach(input => {
